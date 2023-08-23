@@ -6,15 +6,17 @@ int main(){
     // for(int i=0;i=5;i++){
     //     cin>>ar[i];
     // }
-    for(int i=0;i=4;i++){
-        int min;
-        for(int j=i+1;j=4;j++){
-            if(ar[i]<min){
-                swap(ar[i],min);
+    for(int i=0;i<4;i++){
+        int min=ar[i];
+        for(int j=i+1;j<5;j++){
+
+            if(ar[j]<min){
+                min=ar[j];
+                swap(ar[j],min);
             }
         }
     }
-    for(int i=0;i=4;i++){
+    for(int i=0;i<=4;i++){
         cout<<ar[i];
     }
     
